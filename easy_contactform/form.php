@@ -1,5 +1,6 @@
 
     <?php
+
 	
         	header( "Content-Type: text/html; charset=utf-8" );
     
@@ -8,23 +9,22 @@
     		$tel = $_POST["tel"];
     		$email = $_POST["email"];
     		$message = $_POST["message"];
-    		$human = intval($_POST["human"]);
-			$to = file_get_contents('data/other/easy_contactform/mail.txt', true);
-		$fromer = file_get_contents('data/other/easy_contactform/sender.txt',true);
+    		 $hiddencaptcha = $_POST['hiddencaptcha'];
+			 $captcha = $_POST['captcha'];
+			$to = @file_get_contents('data/other/easy_contactform/mail.txt', true);
+		$fromer = @file_get_contents('data/other/easy_contactform/sender.txt',true);
     
     $headers = "From: ".$fromer." \r\n";
     $headers .= "Reply-To: ". strip_tags($_POST["email"]) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     
-    		$subject = file_get_contents('data/other/easy_contactform/subject.txt', true);
-			
-			$fromLabel = file_get_contents('data/other/easy_contactform/fromlabel.txt', true);
-			$fromLabelmail = file_get_contents('data/other/easy_contactform/fromlabelmail.txt', true);
-			$fromLabelphone = file_get_contents('data/other/easy_contactform/fromlabelphone.txt', true);
-			$fromLabelcontent = file_get_contents('data/other/easy_contactform/fromlabelcontent.txt', true);
-			$questionfin = file_get_contents('data/other/easy_contactform/questionanswer.txt', true);
-
+    		$subject = @file_get_contents('data/other/easy_contactform/subject.txt', true);
+			$fromLabel = @file_get_contents('data/other/easy_contactform/fromlabel.txt', true);
+			$fromLabelmail = @file_get_contents('data/other/easy_contactform/fromlabelmail.txt', true);
+			$fromLabelphone = @file_get_contents('data/other/easy_contactform/fromlabelphone.txt', true);
+			$fromLabelcontent = @file_get_contents('data/other/easy_contactform/fromlabelcontent.txt', true);
+ 
 
 
 			// Program to display URL of current page. 
@@ -80,16 +80,19 @@ $link .= $_SERVER['REQUEST_URI'];
     ";
 
     		//Check if simple anti-bot test is correct
-    		if ($human !== '"'+$questionfin+'"') {
-				echo'<div class="easyContactSendNot">';echo file_get_contents('data/other/easy_contactform/fail.txt'); echo '</div>';
+    		if (sha1($captcha) !== $hiddencaptcha) {
+				echo'<div class="easyContactSendNot">';echo @file_get_contents('data/other/easy_contactform/fail.txt'); echo '</div>';
 
     	
 	} else {
 		if (mail ($to, $subject, $body,$headers)){
-			echo'<div class="easyContactSend">';echo file_get_contents('data/other/easy_contactform/success.txt') ; echo '</div>';
+			echo'<div class="easyContactSend">';echo @file_get_contents('data/other/easy_contactform/success.txt') ; echo '</div>';
 		};
 	};
 
     };
     ?>
+
+
+
     
