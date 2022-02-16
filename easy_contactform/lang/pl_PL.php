@@ -1,7 +1,7 @@
 <?php 
 
 	$i18n = array(
-	// English
+	// Polski
 	
 	'EASYNAMEONMENU'=> 'Easy_contactForm settings',
 	'SENDER' 		=> 'Sender:',
