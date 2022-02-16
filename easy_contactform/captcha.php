@@ -12,11 +12,9 @@ global $SITEURL;
 if(document.querySelector('.easyContactForm')!==null){
 
 const captcha = `
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&family=Special+Elite&display=swap');
 </style>
-
 
 <div style="display: flex;
 align-items: center;
