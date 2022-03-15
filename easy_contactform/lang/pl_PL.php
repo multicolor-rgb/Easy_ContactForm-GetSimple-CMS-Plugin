@@ -3,43 +3,43 @@
 	$i18n = array(
 	// Polski
 	
-	'EASYNAMEONMENU'=> 'Easy_contactForm settings',
-	'SENDER' 		=> 'Sender:',
-    'DELIVER' 		=> 'Email address where messages will be sent (example@mail.com, example2@mail.com) ',
-    'SUBJECTMESS' 	=> 'Message Subject from website',
-    'TEXTSUCCESS' 	=> 'Message sent successfully text',
-    'TEXTNOSUCCESS' => 'Message not sent text',
-    'ANSWER' 		=> 'Answer the question',
-    'LABELSMAIL' 	=> 'Labels inside email',
+	'EASYNAMEONMENU'=> 'Easy_contactForm ustawienia',
+	'SENDER' 		=> 'Nadawca:',
+    'DELIVER' 		=> 'Adres e-mail, na który będą wysyłane wiadomości(przyklad@mail.com, przyklad2@mail.com)',
+    'SUBJECTMESS' 	=> 'Temat wiadomości ze strony',
+    'TEXTSUCCESS' 	=> 'Wiadomość wysłana pomyślnie tekst',
+    'TEXTNOSUCCESS' => 'Wiadomość nie została wysłana tekst',
+    'ANSWER' 		=> 'Odpowiedź na pytanie',
+    'LABELSMAIL' 	=> 'Etykiety w wiadomości e-mail',
 
-    'FROMLABEL' 	=> '"From" Label',
-    'EMAILLABEL' 	=> '"E-mail" Label',
-    'PHONELABEL' 	=> '"Phone" Label',
-    'CONTENTLABEL' 	=> '"Content" Label',
-    'SAVESETTINGS' 	=> 'Save settings',
+    'FROMLABEL' 	=> '"Od" Etykieta',
+    'EMAILLABEL' 	=> '"E-mail" Etykieta',
+    'PHONELABEL' 	=> '"Telefon" Etykieta',
+    'CONTENTLABEL' 	=> '„Treść” Etykieta',
+    'SAVESETTINGS' 	=> 'Zapisz ustawienia',
 
-    'SUPPORT' 		=> 'If you would like support my work  via paypal :) Thanks!',
-    'CREATED' 		=> 'Created by',
+    'SUPPORT' 		=> 'Jeśli chciałbyś wesprzeć moją pracę przez paypal :) Dzięki!',
+    'CREATED' 		=> 'Stworzone przez',
 
     // options cke
 	
-    'REQ' 			=> 'Required?',
-    'CKNAME' 		=> 'Label for Name and Surname',
-    'CKPHONE' 		=> 'Label for Phone',
-    'CKMAIL' 		=> 'Label for E-mail',
-    'CKMESS' 		=> 'Label for Message',
-    'CKPRIVACY' 	=> 'The content of the Privacy Policy',
-    'CKREQ' 		=> 'Text for the "Required" field',
-    'CKSUBMIT' 		=> 'Text for the "Submit" button',
+    'REQ' 			=> 'Wymagany?',
+    'CKNAME' 		=> 'Etykieta imię i nazwisko',
+    'CKPHONE' 		=> 'Etykieta telefon',
+    'CKMAIL' 		=> 'Etykieta e-mail',
+    'CKMESS' 		=> 'Etykieta wiadomości',
+    'CKPRIVACY' 	=> 'Treść do akceptacji polityki prywatności',
+    'CKREQ' 		=> 'Tekst dla pola "wymagane"',
+    'CKSUBMIT' 		=> 'Tekst dla przycisku "wyślij"',
     'CKANTISPAM' 	=> 'Enter your Anti-Apam question',
-	'CKCOLOR' 		=> '"Submit" button color',
-	'CKHOVERCOLOR'	=> '"Submit" button hover color',
+	'CKCOLOR' 		=> 'kolor przycisku "wyślij"',
+	'CKHOVERCOLOR'	=> 'kolor przycisku "wyślij" po najechaniu',
 
 	// buttons
 
-	'ADDFORM' 		=>'Add form',
-	'REMOVEFORM' 	=>'Remove form',
-	'CLOSE' 		=>'Close',
+	'ADDFORM' 		=>'Dodaj formularz',
+	'REMOVEFORM' 	=>'Usuń formularz',
+	'CLOSE' 		=>'Zamknij',
     );
 
 ?>
