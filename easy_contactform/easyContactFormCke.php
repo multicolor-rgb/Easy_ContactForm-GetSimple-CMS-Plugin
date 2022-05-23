@@ -143,11 +143,11 @@ z-index:99;
     document.querySelector('.addFormFromOption').addEventListener('click', (x) => {
         x.preventDefault();
         document.querySelector('.easyContactOption').style.display = "none";
-        let namefreq = 'required';
-        let telfreq = 'required';
-        let mailfreq = 'required';
-        let messagefreq = 'required';
-        let privacyfreq = 'required';
+        let namefreq = '';
+        let telfreq = '';
+        let mailfreq = '';
+        let messagefreq = '';
+        let privacyfreq = '';
 
         const namereq = () => {
             if (document.querySelector('.ecname-required').checked == true) {
@@ -167,9 +167,8 @@ z-index:99;
 
                 return reqresults;
             } else {
-                return "";
                 telfreq = '';
-
+                return "";
             }
         };
 

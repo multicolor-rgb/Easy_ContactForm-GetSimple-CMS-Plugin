@@ -20,7 +20,17 @@ const captcha = `
 
 <div style="display: flex;
 align-items: center;
+<<<<<<< Updated upstream
 justify-content: center;border-radius:5px;margin-top:10px;overflow:hidden;text-align:center;width:130px;height:50px;font-size:2rem;font-family: 'Shizuru', cursive;background:url('<?php echo $SITEURL.'plugins/easy_contactform/img/bg.png';?>');">
+=======
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none; 
+-moz-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+justify-content: center;border-radius:5px;margin-top:10px;overflow:hidden;text-align:center;width:130px;height:50px;font-size:2rem;font-family: 'Shizuru', cursive;background:url('<?php echo $SITEURL.'plugins/easy_contactform/img/bg.jpg';?>');">
+>>>>>>> Stashed changes
 <?php echo $random;?>
 </div>
 
