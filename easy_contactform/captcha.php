@@ -12,15 +12,19 @@ global $SITEURL;
 if(document.querySelector('.easyContactForm')!==null){
 
 const captcha = `
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&family=Special+Elite&display=swap');
 </style>
 
-
 <div style="display: flex;
 align-items: center;
-justify-content: center;border-radius:5px;margin-top:10px;overflow:hidden;text-align:center;width:130px;height:50px;font-size:2rem;font-family: 'Shizuru', cursive;background:url('<?php echo $SITEURL.'plugins/easy_contactform/img/bg.png';?>');">
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none; 
+-moz-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+justify-content: center;border-radius:5px;margin-top:10px;overflow:hidden;text-align:center;width:130px;height:50px;font-size:2rem;font-family: 'Shizuru', cursive;background:url('<?php echo $SITEURL.'plugins/easy_contactform/img/bg.jpg';?>');">
 <?php echo $random;?>
 </div>
 
